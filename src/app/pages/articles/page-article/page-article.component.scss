@@ -1,0 +1,34 @@
+
+
+.item-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.titre
+{
+    
+    text-align: left;
+    padding-left: 12px;
+
+}
+.button
+{
+    text-align: right;
+    padding-top: 8px;
+
+}
+
+.detail-art
+{
+    width: 1150px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.pag
+{
+    text-align: center;
+}

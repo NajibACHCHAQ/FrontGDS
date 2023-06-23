@@ -48,7 +48,7 @@ export class MenuComponent implements OnInit {
         id: "21",
         titre:"Articles",
         icon:"fa-solid fa-boxes-stacked",
-        url:"",
+        url:"articles",
         },
         {
           id: "22",
