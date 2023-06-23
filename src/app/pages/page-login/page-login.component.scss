@@ -1,0 +1,65 @@
+.my-container {
+  margin-top: 150px;
+  max-width:500px;
+  max-height:300px;
+  min-height:300px;
+  background : rgb(250, 250, 250);
+  text-align:center;
+  border: 1.5px solid black;
+  border-radius : 10px;
+  box-shadow:2px 2px rgba(139, 139, 139, 0.712);
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+
+
+.card-head{
+  display:flex;
+  margin-top:0px;
+  background:rgb(106, 151, 168);
+  justify-content:center;
+  border-radius:10px 10px 0px 0px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+input
+{
+border-radius:5px;
+margin-top:30px;
+background: rgb(218, 233, 241);
+max-width:500px;
+min-width: 348px;
+height: 30px;
+border:1px solid black;
+}
+
+.but{
+display:flex;
+justify-content:space-around;
+}
+button
+{
+margin-top:40px;
+background:rgb(201, 198, 198);
+border:none;
+height:30px;
+border-radius:5px;
+padding-bottom: 5px;
+}
+.butlink
+{
+background:rgb(100, 187, 209);
+}
+
+a :hover{
+  background: rgb(98, 214, 214);
+}
+
+.butco a :hover{
+  background: rgb(218, 218, 218);
+}
+
+
+

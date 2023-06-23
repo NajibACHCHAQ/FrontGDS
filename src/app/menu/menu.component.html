@@ -1,0 +1,23 @@
+<div class="accordion">
+    <div *ngFor="let menu of menuProperties; let i = index" class="accordion-item">
+      <div class="accordion-header" (click)="toggleAccordion(i)" id="menu{{menu.id}}">
+       
+        <h4>
+          <button>
+            <i class="{{menu.icon}}"></i>&nbsp;
+            {{ menu.titre }}
+          </button>
+        </h4>
+      </div>
+      <div class="accordion-content" [hidden]="activeIndex !== i" id="collapse{{menu.id}}" [attr.aria-labelledby]="'menu'+menu.id" data-parent="accordion"
+      *ngFor="let sousMenu of menu.sousMenu">
+        <a href="javascript:void(0)" (click)="navigate(sousMenu.url)">
+          <i class="{{sousMenu.icon}}"></i>&nbsp;
+          {{ sousMenu.titre }}
+          </a>
+    </div>
+  </div>
+</div>
+
+    
+
