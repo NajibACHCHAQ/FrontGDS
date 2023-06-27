@@ -11,6 +11,7 @@
     text-align: center;
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
     height: auto;
     padding-bottom: 50px;
     background: rgb(203, 231, 247);
@@ -20,7 +21,7 @@
 .left-menu
 {
     width: 400px;
-    min-height: 800px;
+    min-height: 900px;
     border: 2px solid black;
     margin-right: 20px;
     margin-top: 50px;
@@ -31,7 +32,7 @@
 .content-right
 {
     width: 1200px;
-    min-height: 800px;
+    min-height: 900px;
     border: 2px solid black;
     margin-top: 50px; 
     margin-bottom: 0; 
@@ -40,7 +41,7 @@
 .content-main
 {
     border:1px solid black;
-    height: 765px;
+    height: 870px;
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
@@ -56,7 +57,10 @@
     border:1px solid black;   
 }
 .content-main-right{
-    height: 620px;
+    height: 730px;
+    max-height: 730px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     border:1px solid black;
     margin-top: 10px;
     margin-left: 10px;

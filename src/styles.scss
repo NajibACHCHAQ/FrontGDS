@@ -1,3 +1,38 @@
+
+html{
+    padding-right: auto;
+    padding-left: auto;
+}
+
 body{
     background: rgb(217, 252, 239);
+    width: 1400px;
+
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    margin: 12px;
+    margin-left: 45px;
+}
+.header
+{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    margin-bottom: 10px;
+}
+.titresite
+{
+    display:grid;
+    grid-template-rows: 100px 30px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    margin-left: 350px;
+}
+.soustitre
+{
+    font-size: 20px;
+    margin-top: 7px;
 }

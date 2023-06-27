@@ -1,0 +1,14 @@
+.content
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8px;
+    padding-top: 15px;
+    background: rgb(240, 240, 240);
+    font-weight: bold;
+}

@@ -1,0 +1,63 @@
+.my-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 220px ;
+
+}
+.image
+{
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+img{
+    border: 3px solid black;
+    
+}
+.h3 {
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.info
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+ 
+}
+.formulaire-newarticle
+{
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 440px;
+}
+input, select{
+    width: 500px;
+    margin-left: 30px;
+
+}
+.mb-3
+{
+    margin-top: 30px;
+}
+
+.button
+{
+    display: inline-block;
+   text-align: right;
+   margin-right: 58px;
+   margin-top: 12px;
+}
+button
+{
+    margin-left: 40px;
+    color: white;
+}
+.button :hover{
+    color: white;
+}
