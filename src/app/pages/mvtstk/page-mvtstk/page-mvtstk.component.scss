@@ -1,55 +1,57 @@
 
+.accordion{
+
+    width: 1130px;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+}
+
+.accordion-content
+{
+    overflow-y: scroll;
+    max-height: 263px;
+    
+}
+
+
+
+
+
 
 .item-container
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1150px;
+    margin-bottom: 20px;
     margin-top: 10px;
-    margin-bottom: 10px;
 
+
+    
 }
 .titre
 {
     
     text-align: left;
-    padding-left: 12px;
-    padding-top: 12px;
+    padding-left: 14px;
+    margin-top: 12px;
 
 }
 .button
 {
     text-align: right;
     padding-top: 8px;
-    margin-right: 8px;
 
 }
 
 .detail-art
 {
-    width: 1150px;
+
     margin-right: auto;
     margin-left: auto;
-    max-height: 650px;
-}
-.pag
-{
-    text-align: center;
-}
-.accordion{
 
-    width: 1130px;
-    margin-left: 13px;
-    border:2px solid black;
-    margin-top: 5px;
+    max-height: 680px;
 }
-.acc
-{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.accordion-content
-{
-    overflow-y: scroll;
-    max-height: 263px;
-}
+
