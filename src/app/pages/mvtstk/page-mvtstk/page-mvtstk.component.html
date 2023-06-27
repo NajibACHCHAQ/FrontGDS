@@ -1,115 +1,21 @@
 
 <div class="item-container">
     <div class="titre">
-        <H3>Mouvement de stock</H3>
+      <h3>Mouvement de stock</h3>
     </div>
     <div class="button">
-        <app-button-action></app-button-action>
+      <app-button-action></app-button-action>
     </div>
-</div>
-   
-
-
-
-<div class="accordion">
-    <div *ngFor="let option of mvtstk; let i = index" class="">
+  </div>
+  
+  <div class="accordion">
+    <div *ngFor="let option of mvtstk; let i = index" [class.opened-accordion]="activeIndex === i">
       <div class="" (click)="toggleAccordion(i)">
-        <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
-
+        <app-detail-mvt-stk-article>{{ option.title }}</app-detail-mvt-stk-article>
       </div>
       <div class="accordion-content" [hidden]="activeIndex !== i">
-        
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-       
+        <app-detail-mvt-stk *ngFor="let detail of option.details">{{ detail }}</app-detail-mvt-stk>
       </div>
     </div>
-
-</div>
-
-
-
-
-<div class="accordion">
-    <div *ngFor="let option of mvtstk; let i = index" class="">
-      <div class="" (click)="toggleAccordion(i)">
-        <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
-
-      </div>
-      <div class="accordion-content" [hidden]="activeIndex !== i">
-        
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-    
-      </div>
-    </div>
-
-
-</div>
-
-
-<div class="accordion">
-    <div *ngFor="let option of mvtstk; let i = index" class="">
-      <div class="" (click)="toggleAccordion(i)">
-        <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
-
-      </div>
-      <div class="accordion-content" [hidden]="activeIndex !== i">
-        
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-       
-      </div>
-    </div>
-
-</div>
-
-
-
-
-<div class="accordion">
-    <div *ngFor="let option of mvtstk; let i = index" class="">
-      <div class="" (click)="toggleAccordion(i)">
-        <app-detail-mvt-stk-article></app-detail-mvt-stk-article>
-
-      </div>
-      <div class="accordion-content" [hidden]="activeIndex !== i">
-        
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-        <app-detail-mvt-stk> </app-detail-mvt-stk>
-    
-      </div>
-    </div>
-
-
-</div>
-
+  </div>
 
