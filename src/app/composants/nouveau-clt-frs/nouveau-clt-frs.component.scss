@@ -2,7 +2,9 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 220px ;
+
     margin-left: 20px;
+
 }
 .image
 {
@@ -25,7 +27,7 @@ img{
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
  
 }
 .formulaire-newarticle

@@ -20,6 +20,9 @@ import { DetailMvtStkComponent } from './composants/detail-mvt-stk/detail-mvt-st
 import { DetailCltFrsComponent } from './composants/detail-clt-frs/detail-clt-frs.component';
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
+import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
+import { PageNouveauClientComponent } from './pages/client/page-nouveau-client/page-nouveau-client.component';
+import { PageNouveauFournisseurComponent } from './pages/fournisseur/page-nouveau-fournisseur/page-nouveau-fournisseur.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/p
     DetailMvtStkComponent,
     DetailCltFrsComponent,
     PageClientComponent,
-    PageFournisseurComponent
+    PageFournisseurComponent,
+    NouveauCltFrsComponent,
+    PageNouveauClientComponent,
+    PageNouveauFournisseurComponent
   ],
   imports: [
     BrowserModule,
