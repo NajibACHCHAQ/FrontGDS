@@ -68,7 +68,7 @@ export class MenuComponent implements OnInit {
           id: "31",
           titre:"Clients",
           icon:"fa-regular fa-face-smile",
-          url:"",
+          url:"clients",
           },
           {
             id: "32",

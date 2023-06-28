@@ -1,32 +1,15 @@
 
-.opened-accordion {
-    background-color: #bbbbbb;
-    border-radius: 10px 0px 10px 0px;
-  }
 
-.accordion{
-
-    width: 1119px;
-    margin-right: auto;
-    margin-left: auto;
-    border-radius: 20px;
-
-    
-}
-
-.accordion-content
-{
-    overflow-y: scroll;
-    max-height: 263px;
-    
-}
 .item-container
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 1150px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    margin-top: 10px;  
+
+
+    
 }
 .titre
 {
@@ -51,4 +34,7 @@
 
     max-height: 680px;
 }
-
+.pag
+{
+    text-align: center;
+}
