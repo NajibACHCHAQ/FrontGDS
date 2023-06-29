@@ -1,7 +1,7 @@
 
 <div class="item-container">
     <div class="titre">
-      <h3>Mouvement de stock</h3>
+      <h3>Commande Client / Fournisseur</h3>
     </div>
     <div class="button">
       <app-button-action></app-button-action>
@@ -12,11 +12,25 @@
   <div class="accordion">
     <div *ngFor="let option of mvtstk; let i = index" [class.opened-accordion]="activeIndex === i">
       <div class="" (click)="toggleAccordion(i)">
-        <app-detail-mvt-stk-article>{{ option.title }}</app-detail-mvt-stk-article>
+        <app-detail-cmd-clt-frs>{{ option.title }}</app-detail-cmd-clt-frs>
       </div>
       <div class="accordion-content" [hidden]="activeIndex !== i">
-        <app-detail-mvt-stk *ngFor="let detail of option.details">{{ detail }}</app-detail-mvt-stk>
+        <app-detail-cmd *ngFor="let detail of option.details">{{ detail }}</app-detail-cmd>
       </div>
+        <div class="total"> 
+            <div >
+                nbr articles
+            </div>
+            <div >
+                Prix Total
+            </div>
+        </div>
+    </div>
+    <div>
     </div>
   </div>
+  
 </div>
+
+
+

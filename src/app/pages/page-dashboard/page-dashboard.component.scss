@@ -1,6 +1,13 @@
 .main-container, .left-menu, .content-right, .content-main, .content-header_footer, .content-main-right
 {
-    border-radius: 10px;
+    border-radius: 5px 0px 5px 0px;
+    border:1px solid rgb(179, 179, 179);
+}
+
+html
+{
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .main-container
@@ -22,7 +29,6 @@
 {
     width: 400px;
     min-height: 900px;
-    border: 2px solid black;
     margin-right: 20px;
     margin-top: 50px;
     background: rgb(231, 231, 231);
@@ -33,14 +39,13 @@
 {
     width: 1200px;
     min-height: 900px;
-    border: 2px solid black;
     margin-top: 50px; 
     margin-bottom: 0; 
     background: rgb(231, 231, 231);   
 }
 .content-main
 {
-    border:1px solid black;
+
     height: 870px;
     margin-top: 10px;
     margin-left: 10px;
@@ -53,15 +58,12 @@
     background: white;
     margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
-    border:1px solid black;   
+    margin-right: 10px; 
 }
 .content-main-right{
     height: 730px;
     max-height: 730px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border:1px solid black;
+
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
