@@ -24,10 +24,9 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 40px;
+    height: 60px;
     width: 1150px;
-    margin-bottom: 20px;
-    margin-top: 8px;  
+    background-color: rgb(187, 214, 238);
 
 }
 .titre
@@ -42,6 +41,7 @@
 {
     text-align: right;
     padding-top: 8px;
+    margin-right: 12PX;
 
 }
 
