@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-cmd-clt-frs',
@@ -58,7 +59,7 @@ export class PageCmdCltFrsComponent implements OnInit{
   ];
   activeIndex: number = -1;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -69,6 +70,10 @@ export class PageCmdCltFrsComponent implements OnInit{
     } else {
       this.activeIndex = index;
     }
+  }
+
+  nouvelleCommande():void{
+    this.router.navigate(["nouvellecommandeclient"])
   }
 }
 

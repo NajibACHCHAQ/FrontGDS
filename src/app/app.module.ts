@@ -26,6 +26,12 @@ import { PageNouveauFournisseurComponent } from './pages/fournisseur/page-nouvea
 import { DetailCmdCltFrsComponent } from './composants/detail-cmd-clt-frs/detail-cmd-clt-frs.component';
 import { DetailCmdComponent } from './composants/detail-cmd/detail-cmd.component';
 import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
+import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
+import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
+import { PageUtilisateurComponent } from './pages/page-utilisateur/page-utilisateur.component';
+import { NouvelUtilisateurComponent } from './composants/nouvel-utilisateur/nouvel-utilisateur.component';
+import { DetailUtilisateurComponent } from './composants/detail-utilisateur/detail-utilisateur.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +58,13 @@ import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-fr
     PageNouveauFournisseurComponent,
     DetailCmdCltFrsComponent,
     DetailCmdComponent,
-    PageCmdCltFrsComponent
+    PageCmdCltFrsComponent,
+    NouvelleCmdCltFrsComponent,
+    PageCategoriesComponent,
+    NouvelleCategorieComponent,
+    PageUtilisateurComponent,
+    NouvelUtilisateurComponent,
+    DetailUtilisateurComponent
   ],
   imports: [
     BrowserModule,

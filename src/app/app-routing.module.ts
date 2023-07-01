@@ -11,6 +11,11 @@ import { PageClientComponent } from './pages/client/page-client/page-client.comp
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
 import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
 import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
+import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
+import { PageCategoriesComponent } from './pages/categories/page-categories/page-categories.component';
+import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
+import { PageUtilisateurComponent } from './pages/page-utilisateur/page-utilisateur.component';
+import { NouvelUtilisateurComponent } from './composants/nouvel-utilisateur/nouvel-utilisateur.component';
 
 const routes: Routes = [
   {
@@ -46,15 +51,7 @@ const routes: Routes = [
         component: PageClientComponent
       },
       {
-        path: "fournisseurs",
-        component: PageFournisseurComponent
-      },
-      {
         path: "nouveauclient",
-        component: NouveauCltFrsComponent
-      },
-      {
-        path: "nouveaufournisseur",
         component: NouveauCltFrsComponent
       },
       {
@@ -62,9 +59,40 @@ const routes: Routes = [
         component: PageCmdCltFrsComponent
       },
       {
+        path: "nouvellecommandeclient",
+        component: NouvelleCmdCltFrsComponent
+      },
+      {
+        path: "fournisseurs",
+        component: PageFournisseurComponent
+      },
+      {
+        path: "nouveaufournisseur",
+        component: NouveauCltFrsComponent
+      },
+      
+      {
         path: "commandefournisseur",
         component: PageCmdCltFrsComponent
+      },
+      {
+        path: "categories",
+        component: PageCategoriesComponent
+      },
+      {
+        path: "nouvellecategorie",
+        component: NouvelleCategorieComponent
+      },
+      {
+        path: "utilisateurs",
+        component: PageUtilisateurComponent
+      },
+      {
+        path: "nouvelutilisateur",
+        component: NouvelUtilisateurComponent
       }
+      
+
     ]
   }
 ];
