@@ -100,7 +100,7 @@ export class MenuComponent implements OnInit {
             },
             {
               id: "5",
-              titre:"Parametrages",
+              titre:"Paramètres",
               icon:"fa-solid fa-gears",
               url:"",
               sousMenu: [
