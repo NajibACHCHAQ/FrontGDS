@@ -2,11 +2,19 @@
 html{
     padding-right: auto;
     padding-left: auto;
+    width: 2400px;
+
+
 }
 
 body{
-    background: rgb(217, 252, 239);
-    width: 1400px;
+    background:url(assets/star.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1600px;
+
     
 
 }
@@ -15,12 +23,17 @@ body{
     height: 100px;
     margin: 12px;
     margin-left: 45px;
+    margin-top: 38px;
+
 }
+
 .header
 {
     display: grid;
     grid-template-columns: 150px 1fr;
-    margin-bottom: 10px;
+    color: rgb(196, 196, 196);
+    margin-left: 200px;
+    height: 120px;
 }
 .titresite
 {
@@ -30,10 +43,12 @@ body{
     font-size: 80px;
     font-weight: bolder;
     text-align: center;
-    margin-left: 350px;
+    margin-left: 440px;
+
 }
 .soustitre
 {
     font-size: 20px;
-    margin-top: 7px;
+    margin-top: 10px;
+
 }
