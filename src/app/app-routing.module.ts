@@ -54,7 +54,10 @@ const routes: Routes = [
       },
       {
         path: "nouveauclient",
-        component: NouveauCltFrsComponent
+        component: NouveauCltFrsComponent,
+        data:{
+          origin:"client"
+        }
       },
       {
         path: "commandeclient",
