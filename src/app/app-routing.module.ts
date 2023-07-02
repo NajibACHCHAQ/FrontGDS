@@ -16,6 +16,8 @@ import { PageCategoriesComponent } from './pages/categories/page-categories/page
 import { NouvelleCategorieComponent } from './pages/categories/nouvelle-categorie/nouvelle-categorie.component';
 import { PageUtilisateurComponent } from './pages/page-utilisateur/page-utilisateur.component';
 import { NouvelUtilisateurComponent } from './composants/nouvel-utilisateur/nouvel-utilisateur.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
+import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
 
 const routes: Routes = [
   {
@@ -90,6 +92,14 @@ const routes: Routes = [
       {
         path: "nouvelutilisateur",
         component: NouvelUtilisateurComponent
+      },
+      {
+        path: "profil",
+        component: PageProfilComponent
+      },
+      {
+        path: "changermotdepasse",
+        component: ChangerMotDePasseComponent
       }
       
 
