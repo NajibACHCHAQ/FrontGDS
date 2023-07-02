@@ -10,8 +10,8 @@
         </h4>
       </div>
       <div class="accordion-content" [hidden]="activeIndex !== i" id="collapse{{menu.id}}" [attr.aria-labelledby]="'menu'+menu.id" data-parent="accordion"
-      *ngFor="let sousMenu of menu.sousMenu">
-        <a href="javascript:void(0)" (click)="navigate(sousMenu.url)">
+      *ngFor="let sousMenu of menu.sousMenu" [ngClass]="{'backcustom': sousMenu.active, '':!sousMenu.active}">
+        <a href="javascript:void(0)" (click)="navigate(sousMenu)">
           <i class="{{sousMenu.icon}}"></i>&nbsp;
           {{ sousMenu.titre }}
           </a>

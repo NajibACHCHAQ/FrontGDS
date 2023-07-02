@@ -60,7 +60,7 @@ export class MenuComponent implements OnInit {
     },
     {
       id: "3",
-      titre:"  Clients",
+      titre:"Clients",
       icon:"fa-solid fa-user",
       url:"",
       sousMenu: [
@@ -120,13 +120,20 @@ export class MenuComponent implements OnInit {
                 }
             ];
   constructor(private router: Router){}
-  ngOnInit(): void {
-    
 
-      
+  private lastSelectedMenu: Menu | undefined;
+
+
+  ngOnInit(): void {    
   }
-  navigate(url?:string):void {
-    this.router.navigate([url])
+
+  navigate(menu : Menu):void {
+    if(this.lastSelectedMenu){
+      this.lastSelectedMenu.active = false;
+    }
+    menu.active = true;
+    this.lastSelectedMenu = menu;
+    this.router.navigate([menu.url]);
   }
 
 }
