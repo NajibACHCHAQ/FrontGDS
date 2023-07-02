@@ -1,15 +1,16 @@
 <div class="button-action">
-    <div class="but" *ngIf="isNouveauVisible">
-        <button type="button" class="btn btn-success"  (click)="bouttonNouveauClick()">
-            <i class="fa-solid fa-plus"></i>&nbsp; Nouveau</button>
+    <div class="container-button">
+            <button type="button" class="btn btn-success"  (click)="bouttonNouveauClick()" *ngIf="isNouveauVisible">
+                <i class="fa-solid fa-plus"></i>&nbsp; Nouveau</button>
+
+        
+            <button type="button" class="btn btn-warning" *ngIf="isExporterVisible">
+                <i class="fa-solid fa-upload"></i>&nbsp; Exporter</button>
+
+       
+            <button type="button" class="btn btn-primary" *ngIf="isImporterVisible">
+                <i class="fa-solid fa-download"></i>&nbsp; Importer</button>      
     </div>
-    <div class="but"  *ngIf="isExporterVisible">
-        <button type="button" class="btn btn-warning">
-            <i class="fa-solid fa-upload"></i>&nbsp; Exporter</button>
-    </div>
-    <div class="but"  *ngIf="isImporterVisible">
-        <button type="button" class="btn btn-primary">
-            <i class="fa-solid fa-download"></i>&nbsp; Importer</button>
-    </div>
+   
 </div>
 
