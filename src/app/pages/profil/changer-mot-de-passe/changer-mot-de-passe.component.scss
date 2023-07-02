@@ -1,0 +1,122 @@
+.item-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60px;
+    width: 1178px;
+    background-color: rgb(154, 219, 210);
+
+}
+.titre
+{
+    
+    text-align: left;
+    padding-left: 16px;
+    margin-top: 12px;
+
+}
+.my-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-content
+{
+    display: grid;
+    width: 500px;
+    max-height: 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 70px 1fr 1fr;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: 5px;
+    box-shadow: 3px 3px rgb(129, 129, 129);
+
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.right-content
+{
+    display: grid;
+    width: 600px;
+    max-height: 600px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 150px 1fr;
+    margin-right: 35px;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(129, 129, 129);
+    
+
+}
+
+h2{
+    margin-top: 15px;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+button
+{
+    margin-right: 12px;
+    color: white;
+    margin-top: 10px;
+
+}
+
+
+.adr
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22px 22px 22px 22px;
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+input
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.titre2
+{
+    padding-top: 12px;
+}
+
+
+.mdp-form
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(129, 129, 129);
+    width: 500px;
+    height: 220px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 140px;
+    padding-bottom: 24px;
+}
+.validation
+{
+    text-align: right;
+    margin-right: 35px;
+}
