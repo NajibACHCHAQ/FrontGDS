@@ -90,6 +90,13 @@ const routes: Routes = [
         }
       },
       {
+        path: "nouvellecommandefournisseur",
+        component: NouvelleCmdCltFrsComponent,
+        data:{
+          origin:"fournisseur"
+        }
+      },
+      {
         path: "categories",
         component: PageCategoriesComponent
       },

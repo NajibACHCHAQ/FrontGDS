@@ -81,7 +81,14 @@ export class PageCmdCltFrsComponent implements OnInit{
   }
 
   nouvelleCommande():void{
-    this.router.navigate(["nouvellecommandeclient"])
+
+    if (this.origin === "client"){
+      this.router.navigate(["nouvellecommandeclient"])
+    }
+    else if (this.origin === "fournisseur"){
+      this.router.navigate(["nouvellecommandefournisseur"])
+    }
+    
   }
 }
 
