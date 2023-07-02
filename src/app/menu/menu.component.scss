@@ -4,6 +4,7 @@
     width: 340PX;
     margin-right: auto;
     margin-left: auto;
+    
  
   }
   
@@ -15,6 +16,7 @@
     margin-right: 5px;
     box-shadow: 4px 4px rgb(126, 126, 126);
     text-align: left;
+
 
   }
   
@@ -44,5 +46,12 @@
 
   .backcustom
   {
-    background-color: aqua;
+    background-color: rgba(36, 93, 119, 0.603);
+
+    width: 329PX;
+    
+  }
+
+  .backcustom a ,.backcustom i  {
+    color: whitesmoke;
   }
