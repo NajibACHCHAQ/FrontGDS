@@ -30,10 +30,13 @@
     width: 500px;
     max-height: 600px;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 70px 1fr 1fr;
     border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
     margin-left: auto;
     margin-right: 5px;
+    box-shadow: 3px 3px rgb(129, 129, 129);
+
 }
 
 img{
@@ -49,13 +52,18 @@ img{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     margin-right: 35px;
-    border-top: 1px solid rgb(168, 168, 168);
+    border: 1px solid rgb(168, 168, 168);
+    border-radius: 5px;
+    box-shadow: 3px 3px rgb(129, 129, 129);
     
 
 }
 
 .item-right
 {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    grid-template-rows: 1fr;
     border: 1px solid rgb(168, 168, 168);
     border-top: none;
     padding-top: 40px;
@@ -64,16 +72,21 @@ img{
     padding-left: 10px;
 
 }
+.titre-info
+{
+    font-weight: bold;
+}
 
 .item-left
 {
 
-    padding-top: 12px;
+
     font-size: 26px;
     text-align: center;
     padding-left: 10px;
 }
 h2{
+    margin-top: 15px;
     font-size: 48px;
     font-weight: bolder;
 }
@@ -81,4 +94,16 @@ h2{
 button
 {
     margin-right: 12px;
+    color: white;
+}
+
+
+.adr
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 22px 22px 22px 22px;
+    margin-top: 25px;
+    font-style: italic;
+    font-size: 20px;
 }
