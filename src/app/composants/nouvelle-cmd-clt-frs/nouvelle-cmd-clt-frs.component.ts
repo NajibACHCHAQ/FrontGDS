@@ -1,10 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-nouvelle-cmd-clt-frs',
   templateUrl: './nouvelle-cmd-clt-frs.component.html',
   styleUrls: ['./nouvelle-cmd-clt-frs.component.scss']
 })
-export class NouvelleCmdCltFrsComponent {
+export class NouvelleCmdCltFrsComponent implements OnInit{
+
+  
+  constructor(
+    private router: Router,
+    private activateRoute: ActivatedRoute
+    ) { }
+
+    origin ="";
+
+  ngOnInit() {
+    this.activateRoute.data.subscribe(data => {
+      this.origin = data['origin'];
+    })
+  }
 
 }

@@ -65,7 +65,10 @@ const routes: Routes = [
       },
       {
         path: "nouvellecommandeclient",
-        component: NouvelleCmdCltFrsComponent
+        component: NouvelleCmdCltFrsComponent,
+        data:{
+          origin:"client"
+        }
       },
       {
         path: "fournisseurs",
@@ -73,7 +76,10 @@ const routes: Routes = [
       },
       {
         path: "nouveaufournisseur",
-        component: NouveauCltFrsComponent
+        component: NouveauCltFrsComponent,
+        data:{
+          origin:"fournisseur"
+        }
       },
       
       {
