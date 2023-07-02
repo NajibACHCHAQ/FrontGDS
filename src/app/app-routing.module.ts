@@ -58,7 +58,10 @@ const routes: Routes = [
       },
       {
         path: "commandeclient",
-        component: PageCmdCltFrsComponent
+        component: PageCmdCltFrsComponent,
+        data:{
+          origin:"client"
+        }
       },
       {
         path: "nouvellecommandeclient",
@@ -75,7 +78,10 @@ const routes: Routes = [
       
       {
         path: "commandefournisseur",
-        component: PageCmdCltFrsComponent
+        component: PageCmdCltFrsComponent,
+        data:{
+          origin:"fournisseur"
+        }
       },
       {
         path: "categories",

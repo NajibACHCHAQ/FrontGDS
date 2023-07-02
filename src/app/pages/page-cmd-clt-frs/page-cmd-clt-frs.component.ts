@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-cmd-clt-frs',
@@ -59,9 +59,17 @@ export class PageCmdCltFrsComponent implements OnInit{
   ];
   activeIndex: number = -1;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    private activateRoute: ActivatedRoute
+    ) { }
+
+    origin ="";
 
   ngOnInit() {
+    this.activateRoute.data.subscribe(data => {
+      this.origin = data['origin'];
+    })
   }
 
   toggleAccordion(index: number) {
