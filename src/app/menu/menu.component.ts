@@ -20,7 +20,7 @@ export class MenuComponent implements OnInit {
   public menuProperties: Array<Menu> =[ 
   {
     id:"1",
-    titre:"Tableau de bord",
+    titre:" Tableau de bord",
     icon:"fa-solid fa-chart-simple",
     url:"",
     sousMenu: [
@@ -60,7 +60,7 @@ export class MenuComponent implements OnInit {
     },
     {
       id: "3",
-      titre:"Clients",
+      titre:"  Clients",
       icon:"fa-solid fa-user",
       url:"",
       sousMenu: [

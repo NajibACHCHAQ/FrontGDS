@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-utilisateur',
@@ -8,14 +8,26 @@ import { Router } from '@angular/router';
 })
 export class PageUtilisateurComponent implements OnInit{
 
-  constructor(private router:Router){}
+  constructor(
+    private router: Router,
+    private activateRoute: ActivatedRoute
+    ) { }
 
-  ngOnInit(): void {
-      
+    origin ="";
+
+  ngOnInit() {
+    this.activateRoute.data.subscribe(data => {
+      this.origin = data['origin'];
+    })
   }
 
   nouvelUtilisateur():void{
     this.router.navigate(["nouvelutilisateur"])
+  }
+  
+  cancelClick():void{
+  
+    this.router.navigate(['utilisateurs'])
   }
 
 }

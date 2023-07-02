@@ -90,6 +90,18 @@ export class PageCmdCltFrsComponent implements OnInit{
     }
     
   }
+
+
+  cancelClick():void{
+    if(this.origin ==='client')
+    {
+      this.router.navigate(['clients'])
+    }
+    else if(this.origin ==='fournisseur')
+    {
+      this.router.navigate(['fournisseurs'])
+    }
+  }
 }
 
 

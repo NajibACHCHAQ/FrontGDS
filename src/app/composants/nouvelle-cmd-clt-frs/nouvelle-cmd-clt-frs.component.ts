@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class NouvelleCmdCltFrsComponent implements OnInit{
 
-  
+
   constructor(
     private router: Router,
     private activateRoute: ActivatedRoute
@@ -20,6 +20,17 @@ export class NouvelleCmdCltFrsComponent implements OnInit{
     this.activateRoute.data.subscribe(data => {
       this.origin = data['origin'];
     })
+  }
+
+  cancelClick():void{
+    if(this.origin ==='client')
+    {
+      this.router.navigate(['commandeclient'])
+    }
+    else if(this.origin ==='fournisseur')
+    {
+      this.router.navigate(['commandefournisseur'])
+    }
   }
 
 }

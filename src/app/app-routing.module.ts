@@ -113,7 +113,10 @@ const routes: Routes = [
       },
       {
         path: "nouvelutilisateur",
-        component: NouvelUtilisateurComponent
+        component: NouvelUtilisateurComponent,
+        data:{
+          origin:"utilisateur"
+        }
       },
       {
         path: "profil",
