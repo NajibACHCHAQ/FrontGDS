@@ -1,51 +1,46 @@
-
-html{
-    padding-right: auto;
-    padding-left: auto;
-    width: 2112px;
-
-
+header{
+    text-align: center;
 }
 
 body{
+
     background:url(assets/star.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-    width: 1600px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 
-    
 
 }
 .logo{
     width: 100px;
     height: 100px;
-    margin: 12px;
-    margin-left: 32px;
-    margin-top: 38px;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .header
 {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 140px 1460px;
+    grid-template-rows: 140px;
+    width: 1600px;
     color: rgb(196, 196, 196);
-    margin-left: 200px;
-    height: 120px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .titresite
 {
     display:grid;
-    grid-template-rows: 100px 30px;
-    text-align: center;
+    grid-template-rows: 100px 40px;
     font-size: 80px;
     font-weight: bolder;
-    text-align: center;
-    margin-left: 440px;
-
 }
 .soustitre
 {
