@@ -16,38 +16,41 @@
 .left-menu
 {
     width: 400px;
-    height: 893px;
+    height: 880px;
     margin-right: 5px;
     background: rgb(86, 139, 122);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
     border-radius: 5px 5px 5px 5px;
+    
 
 }
 .content-right
 {
     width: 1200px;
-    height: 893px;
+    height: 880px;
     background: rgb(86, 139, 122);
     border-radius: 5px 5px 5px 5px;
     border: none;
+    padding-top: 20px;
+
 }
 .content-main
 {
 
-    height: 868px;
+    height: 850px;
     margin-left: 10px;
     margin-right: 10px;
     background: whitesmoke; 
     border-radius: 5px 5px 5px; 
-    margin-bottom: 15px;
+
+
 }
 
 .content-header, .content-footer
 {
     height: 60px;
     background: white;
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -63,7 +66,6 @@
 .content-main-right{
     height: 730px;
     max-height: 730px;
-    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
     background: whitesmoke; 
