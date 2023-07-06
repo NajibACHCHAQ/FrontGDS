@@ -15,10 +15,12 @@ body{
 
 }
 .logo{
-    width: 100px;
-    height: 100px;
-    justify-content: center;
+    width: 120px;
+    height: 120px;
+    justify-content: left;
     align-items: center;
+    margin-top: 15px;
+    
 }
 
 .header
@@ -26,10 +28,9 @@ body{
     display: grid;
     grid-template-columns: 140px 1460px;
     grid-template-rows: 140px;
-    width: 1600px;
+    width: 1805px;
     color: rgb(196, 196, 196);
     height: 150px;
-    justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -41,6 +42,7 @@ body{
     grid-template-rows: 100px 40px;
     font-size: 80px;
     font-weight: bolder;
+    text-align: center;
 }
 .soustitre
 {
