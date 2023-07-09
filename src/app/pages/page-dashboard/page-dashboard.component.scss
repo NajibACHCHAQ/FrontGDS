@@ -42,8 +42,8 @@
     margin-left: 10px;
     margin-right: 10px;
     background: whitesmoke; 
-    border-radius: 5px 5px 5px; 
-    box-shadow: 10px 10px 10px 10px rgb(178, 178, 178);
+    border-radius: 5px 5px 5px 5px; 
+    box-shadow: 0px 0px 15px 15px rgb(178, 178, 178);
 
 
 }
@@ -54,25 +54,29 @@
     background: white;
     margin-left: 10px;
     margin-right: 10px;
-    box-shadow: 10px 10px 10px 10px rgb(178, 178, 178);
+    
 
 }
 .content-header
 {
 
     border-radius: 5px 5px 0px 0px; 
+    box-shadow: 0px 0px 15px 15px  rgb(178, 178, 178);
 }
+
 .content-footer
 {
     border-radius: 0px 0px 5px 5px; 
-}
+    box-shadow:0px 1px 15px 15px  rgb(178, 178, 178);
+    
+} 
 .content-main-right{
     height: 730px;
     max-height: 730px;
     margin-left: 10px;
     margin-right: 10px;
     background: whitesmoke; 
-    box-shadow: 10px 10px 10px 10px rgb(178, 178, 178);
+    box-shadow: 0px 15px 15px 15px rgb(178, 178, 178);
 
 }
 h3{
