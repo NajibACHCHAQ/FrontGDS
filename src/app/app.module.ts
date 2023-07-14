@@ -34,6 +34,7 @@ import { NouvelUtilisateurComponent } from './composants/nouvel-utilisateur/nouv
 import { DetailUtilisateurComponent } from './composants/detail-utilisateur/detail-utilisateur.component';
 import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

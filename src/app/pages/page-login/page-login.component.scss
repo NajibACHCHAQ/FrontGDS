@@ -1,13 +1,15 @@
 .my-container {
-  margin-top: 150px;
-  max-width:500px;
-  max-height:300px;
-  min-height:300px;
+  margin-top: 200px;
+  margin-bottom: auto;
+  width: 650px;
+  max-width:900px;
+  max-height:400px;
+  min-height:400px;
   background : rgb(250, 250, 250);
   text-align:center;
-  border: 1.5px solid black;
+  border: 1.5px solid rgba(151, 151, 151, 0.488);
   border-radius : 10px;
-  box-shadow:2px 2px rgba(139, 139, 139, 0.712);
+  box-shadow:15px 5px 15px 5px rgba(139, 139, 139, 0.712);
   margin-left:auto;
   margin-right:auto;
 
@@ -25,31 +27,26 @@
   text-transform: uppercase;
   height: 70px;
   padding-top: 15px;
+
 }
 input
 {
+
 border-radius:5px;
-margin-top:30px;
+margin-top:40px;
 background: rgb(218, 233, 241);
 max-width:500px;
-min-width: 348px;
-height: 30px;
-border:1px solid black;
+min-width: 425px;
+height: 45px;
+border:1px solid rgb(164, 164, 164);
 }
 
 .but{
 display:flex;
 justify-content:space-around;
+margin-top: 30px;
 }
-button
-{
-margin-top:40px;
-background:rgb(201, 198, 198);
-border:none;
-height:30px;
-border-radius:5px;
 
-}
 
 .butlink
 {

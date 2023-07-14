@@ -26,9 +26,10 @@ body{
 .header
 {
     display: grid;
-    grid-template-columns: 140px 1460px;
+    grid-template-columns: 140px 1fr;
     grid-template-rows: 140px;
-    width: 1605px;
+    max-width: 1405px;
+    min-width: 300px;
     color: rgb(196, 196, 196);
     height: 150px;
     align-items: center;
@@ -43,6 +44,7 @@ body{
     font-size: 80px;
     font-weight: bolder;
     text-align: center;
+    margin-right: 120px;
 }
 .soustitre
 {
