@@ -6,7 +6,18 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "start:local": "npm run gs-api && ng serve -- --proxyConfig=proxy.conf.json",
+    "gs-api": "npm run gs-api:create-dist && npm run gs-api:download && npm run gs-api:extract && npm run gs-api:swagger-gen",
+    "gs-api:create-dist": "npm run create-tools-dir && npm run create-swagger-dirs",
+    "create-tools-dir": "if not exist tools (mkdir tools && mkdir tools\\swagger)",
+    "create-swagger-dirs": "if not exist tools\\swagger\\dist (mkdir tools\\swagger\\dist && mkdir tools\\swagger\\src)",
+    "gs-api:download": "copy /Y /B \"C:\\Users\\najib\\Desktop\\Projet APPGDS Front + Back\\API-GDS2\\target\\gestiondestock-0.0.1-SNAPSHOT.jar\" \"./tools/swagger/dist\" && copy /Y /B \"C:\\Users\\najib\\Desktop\\Projet APPGDS Front + Back\\API-GDS2\\target\\swagger.json\" \"./tools/swagger/src\"",
+    "gs-api:extract": "node ./tools/swagger/src/swagger.json 0.0.1-SNAPSHOT",
+    "gs-api:swagger-gen": "node_modules\\.bin\\ng-swagger-gen.cmd -i ./tools/swagger/src/swagger.json -o src/gs-api/src"
+
   },
   "private": true,
   "dependencies": {
