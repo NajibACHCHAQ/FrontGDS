@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { AuthenticationRequest, AuthenticationResponse } from 'src/gs-api/src/models';
 import { AuthenticationService } from 'src/gs-api/src/services';
 
@@ -10,18 +10,13 @@ import { AuthenticationService } from 'src/gs-api/src/services';
 export class UserService {
 
   constructor(
-    private authenticationService: AuthenticationService,
-    private router: Router
+    private authenticationService: AuthenticationService
+    
   ){}
   
-  login(authenticationRequest: AuthenticationRequest) {
+  login(authenticationRequest: AuthenticationRequest):Observable <AuthenticationResponse>{
     return this.authenticationService.authenticate(authenticationRequest)
-      .subscribe((data: AuthenticationResponse) => {
-        localStorage.setItem('authenticationResponse', JSON.stringify(data));
-      }, error => {
-        console.log(error);
-        this.router.navigate(['register']);
-      });
+  
   }
     
   }

@@ -2,6 +2,9 @@
   <div class="card-head">
     <h2>Se connecter</h2>
   </div>
+  <div class="alert alert-danger" *ngIf="errorMessage">
+    {{errorMessage}}
+  </div>
   <div>
     <div>
       <input type="email" placeholder=" Email" autocomplete="email" [ngModel] = "authenticationRequest.login"  >
