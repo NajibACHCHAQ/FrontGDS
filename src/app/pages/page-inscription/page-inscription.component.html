@@ -3,44 +3,54 @@
       <h2>Inscription</h2>
     </div>
       <div class="cardbody">
-        <div >
-        <input type="text"  placeholder=" Votre nom" autocomplete="family-name">
-      </div>
-      <div>
-        <input type="text" placeholder=" Code fiscal">
-      </div>
-      <div >
-        <input type="email" placeholder=" Email" autocomplete="email">
-      </div>
-      <div >
-        <input type="text"  placeholder=" Adresse 1" autocomplete="address-level1">
-      </div>
-      <div >
-        <input type="text"  placeholder=" Adresse 2" autocomplete="address-level1">
-      </div>
-      <div >
-        <input type="text"  placeholder=" Ville" autocomplete="">
-      </div>
-      <div >
-        <input type="text"  placeholder=" Code postal" autocomplete="postal-code">
-      </div>
-      <div >
-        <input type="text"  placeholder=" Pays" autocomplete="country-name">
-      </div>
-      <div >
-        <input type="password" placeholder=" Mot de passe" autocomplete="email">
-      </div>
-      <div >
-        <input type="password"  placeholder=" Confirmer mot de passe">
-      </div>
+        <div class="alert alert-danger" *ngIf="errorsMsg.length > 0">
+          <div>
+            <span *ngFor="let msg of errorsMsg">{{msg}}</span>
+          </div>
+        </div>
+        <div>
+          <input type="text" placeholder="Votre nom" autocomplete="family-name" [(ngModel)]="entrepriseDto.nom">
+        </div>
+        <div>
+          <input type="text" placeholder="Code fiscal" [(ngModel)]="entrepriseDto.codeFiscal">
+        </div>
+        <div>
+          <input type="email" placeholder="Email" autocomplete="email" [(ngModel)]="entrepriseDto.email">
+        </div>
+        <div>
+          <input type="text" placeholder="Adresse 1" autocomplete="address-level1" [(ngModel)]="adresseDto.adresse1">
+        </div>
+        <div>
+          <input type="text" placeholder="Adresse 2" autocomplete="address-level1" [(ngModel)]="adresseDto.adresse2">
+        </div>
+        <div>
+          <input type="text" placeholder="Ville" autocomplete="" [(ngModel)]="adresseDto.ville">
+        </div>
+        <div>
+          <input type="text" placeholder="Code postal" autocomplete="postal-code" [(ngModel)]="adresseDto.codePostale">
+        </div>
+        <div>
+          <input type="text" placeholder="Pays" autocomplete="country-name" [(ngModel)]="adresseDto.pays">
+        </div>
+        <div>
+          <input type="text" placeholder="Description" autocomplete="country-name" [(ngModel)]="entrepriseDto.description">
+        </div>
+        <div>
+          <input type="text" placeholder="Numéro de téléphone" autocomplete="tel" [(ngModel)]="entrepriseDto.numTel" >
+        </div>
+        <div>
+         
+        
 
 
         <div class="but">
+          
+          <a [routerLink]="['/login']">
+            <button type="button" class="btn btn-primary" >Se connecter</button>
+          </a>
           <div class="butco">
-            <a [routerLink]="['/login']"><button type="button">Se connecter </button></a>
+            <button class="butlink" type="button" class="btn btn-primary" (click)="inscrire()"><i class="fa-solid fa-check fa-xl"></i> &nbsp;S'inscrire</button>
           </div>
-          <a><button class="butlink" type="button">S'inscrire </button></a>
-        </div>
     </div>
     </div>
     
