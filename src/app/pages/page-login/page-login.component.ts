@@ -26,7 +26,7 @@ export class PageLoginComponent  implements OnInit{
     this.userService.login(this.authenticationRequest).subscribe((data: AuthenticationResponse) => {
       localStorage.setItem('authenticationResponse', JSON.stringify(data));
     }, (error) => {
-      this.errorMessage = error.error.message;
+      this.errorMessage = 'Utilisateur et / ou mot de passe incorrect';
     });
   }
 
