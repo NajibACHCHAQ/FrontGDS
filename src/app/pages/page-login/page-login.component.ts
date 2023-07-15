@@ -24,7 +24,8 @@ export class PageLoginComponent  implements OnInit{
   }
   login(){
     this.userService.login(this.authenticationRequest).subscribe((data: AuthenticationResponse) => {
-      localStorage.setItem('authenticationResponse', JSON.stringify(data));
+      this.userService.setConnectedUser(data);
+      this.router.navigate([''])
     }, (error) => {
       this.errorMessage = 'Utilisateur et / ou mot de passe incorrect';
     });

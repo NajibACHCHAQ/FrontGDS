@@ -35,22 +35,31 @@ input
 border-radius:5px;
 margin-top:40px;
 background: rgb(218, 233, 241);
-max-width:500px;
-min-width: 425px;
+width:500px;
 height: 45px;
 border:1px solid rgb(164, 164, 164);
 }
 
 .but{
-display:flex;
-justify-content:space-around;
+display:grid;
+width: 500px;
+grid-template-columns: 1fr 1fr;
 margin-top: 30px;
+margin-left: auto;
+margin-right: auto;
+}
+a{
+  text-align: left;
 }
 
-
+.butco
+{
+  text-align: right;
+}
 .butlink
 {
 background:rgb(100, 187, 209);
+
 }
 
 a :hover{
