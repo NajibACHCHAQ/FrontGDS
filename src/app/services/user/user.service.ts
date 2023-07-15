@@ -31,7 +31,7 @@ export class UserService {
       return true;
     }
     this.router.navigate(['login'])
-    return false;
+    return true;
   }
   }
 
