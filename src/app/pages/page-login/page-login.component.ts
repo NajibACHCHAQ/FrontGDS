@@ -7,8 +7,20 @@ import { AuthenticationRequest } from 'src/gs-api/src/models';
   templateUrl: './page-login.component.html',
   styleUrls: ['./page-login.component.scss']
 })
-export class PageLoginComponent  {
+export class PageLoginComponent  implements OnInit{
 
+  authenticationRequest: AuthenticationRequest ={};
+
+  constructor(
+    private userService : UserService
+  ){}
+
+  ngOnInit(): void {
+    
+  }
+  login(){
+    this.userService.login(this.authenticationRequest);
+  }
 
 
 }

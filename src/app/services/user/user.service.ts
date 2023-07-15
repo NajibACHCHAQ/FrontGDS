@@ -9,8 +9,20 @@ import { AuthenticationService } from 'src/gs-api/src/services';
 })
 export class UserService {
 
-
-    
+  constructor(
+    private authenticationService: AuthenticationService,
+    private router: Router
+  ){}
+  
+  login(authenticationRequest: AuthenticationRequest) {
+    return this.authenticationService.authenticate(authenticationRequest)
+      .subscribe((data: AuthenticationResponse) => {
+        localStorage.setItem('authenticationResponse', JSON.stringify(data));
+      }, error => {
+        console.log(error);
+        this.router.navigate(['register']);
+      });
+  }
     
   }
 
