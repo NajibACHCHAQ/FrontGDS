@@ -9,27 +9,36 @@ import { AuthenticationRequest, AuthenticationResponse } from 'src/gs-api/src/mo
   templateUrl: './page-login.component.html',
   styleUrls: ['./page-login.component.scss']
 })
-export class PageLoginComponent  implements OnInit{
+export class PageLoginComponent implements OnInit {
 
-  authenticationRequest: AuthenticationRequest ={};
+  authenticationRequest: AuthenticationRequest = {};
   errorMessage = '';
 
   constructor(
-    private userService : UserService,
+    private userService: UserService,
     private router: Router
-  ){}
+  ) { }
 
   ngOnInit(): void {
-    
   }
-  login(){
-    this.userService.login(this.authenticationRequest).subscribe((data: AuthenticationResponse) => {
-      this.userService.setConnectedUser(data);
-      this.router.navigate([''])
-    }, (error) => {
-      this.errorMessage = 'Utilisateur et / ou mot de passe incorrect';
+
+  // tslint:disable-next-line:typedef
+  login() {
+    this.userService.login(this.authenticationRequest).subscribe((data) => {
+      this.userService.setAccessToken(data);
+      this.getUserByEmail();
+      this.router.navigate(['']);
+    }, error => {
+      this.errorMessage = 'Login et / ou mot de passe incorrecte';
     });
   }
 
+  getUserByEmail(): void {
+    this.userService.getUserByEmail(this.authenticationRequest.login)
+      .subscribe(user => {
+        this.userService.setConnectedUser(user);
+      });
+  }
 
 }
+

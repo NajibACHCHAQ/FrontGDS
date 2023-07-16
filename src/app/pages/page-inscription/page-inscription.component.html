@@ -18,19 +18,19 @@
           <input type="email" placeholder="Email" autocomplete="email" [(ngModel)]="entrepriseDto.email">
         </div>
         <div>
-          <input type="text" placeholder="Adresse 1" autocomplete="address-level1" [(ngModel)]="adresseDto.adresse1">
+          <input type="text" placeholder="Adresse 1" autocomplete="address-level1" [(ngModel)]="adresse.adresse1">
         </div>
         <div>
-          <input type="text" placeholder="Adresse 2" autocomplete="address-level1" [(ngModel)]="adresseDto.adresse2">
+          <input type="text" placeholder="Adresse 2" autocomplete="address-level1" [(ngModel)]="adresse.adresse2">
         </div>
         <div>
-          <input type="text" placeholder="Ville" autocomplete="" [(ngModel)]="adresseDto.ville">
+          <input type="text" placeholder="Ville" autocomplete="" [(ngModel)]="adresse.ville">
         </div>
         <div>
-          <input type="text" placeholder="Code postal" autocomplete="postal-code" [(ngModel)]="adresseDto.codePostale">
+          <input type="text" placeholder="Code postal" autocomplete="postal-code" [(ngModel)]="adresse.codePostale">
         </div>
         <div>
-          <input type="text" placeholder="Pays" autocomplete="country-name" [(ngModel)]="adresseDto.pays">
+          <input type="text" placeholder="Pays" autocomplete="country-name" [(ngModel)]="adresse.pays">
         </div>
         <div>
           <input type="text" placeholder="Description" autocomplete="country-name" [(ngModel)]="entrepriseDto.description">
@@ -39,12 +39,12 @@
           <input type="text" placeholder="Numéro de téléphone" autocomplete="tel" [(ngModel)]="entrepriseDto.numTel" >
         </div>
         <div>
-         
-        
+
+
 
 
         <div class="but">
-          
+
           <a [routerLink]="['/login']">
             <button type="button" class="btn btn-primary" >Se connecter</button>
           </a>
@@ -53,4 +53,4 @@
           </div>
     </div>
     </div>
-    
+
